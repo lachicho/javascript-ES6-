@@ -70,5 +70,15 @@ var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
 let textoCompleto = epic.reduce((a,b) => {return a+' '+b} );
 
 console.log(textoCompleto);
+/*------------*/
+//Exercici 4
+
+// Crear una funció que accepti un string i retornada aquest string revertit. Nota: Usar funció fletxa (arrow functions), l'operador de prograpación (spread operator) y el mètode .reverse()
+
+let frase = "una frase para el ejercicio de javascript";
+let revertidorFrases = (texto) => texto.split(" ").reverse().join(' ');
+
+
+console.log(revertidorFrases(frase));
 
 
