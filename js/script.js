@@ -80,5 +80,29 @@ let revertidorFrases = (texto) => texto.split(" ").reverse().join(' ');
 
 
 console.log(revertidorFrases(frase));
+/*------------*/
+//Exercici 5
+// Reemplaça en el següent bloc de codi la promesa per aync/await:
+
+// function b() {
+//    // ...
+// }
+// function a() {
+//    b().then() = > {
+//    doMoreWork();
+//    }
+// }
+async function a() {
+
+    let b = new Promise ( (resolve, reject) => {
+        setTimeout( () => {
+            resolve("La tarea ha sido resuelta")
+        }, 3000)
+    })
+    let result = await b;
+    console.log(result);
+ }
+ 
+ a();
 
 
