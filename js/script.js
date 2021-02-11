@@ -48,3 +48,17 @@ console.log(result(4, 3));
 // }
 const greet = who => `Hello ${who}`;
 console.log(greet("Maria"));
+/*---------- */
+// Exercici 2
+var users = 
+[{ firstName: 'Homer', lastName: 'Simpson' },
+{ firstName: 'Marge', lastName: 'Simpson' },
+{ firstName: 'Bart', lastName: 'Simpson' },
+{ firstName: 'Lisa', lastName: 'Simpson' },
+{ firstName: 'Maggie', lastName: 'Simpson' }];
+
+let userNames = users.map(user => {return user.firstName});
+
+console.log(userNames);
+
+
