@@ -60,5 +60,15 @@ var users =
 let userNames = users.map(user => {return user.firstName});
 
 console.log(userNames);
+/*-------------- */
+//Exercici 3
+
+//Donat el següent array de strings, mostrar per consola la frase completa usant .reduce()
+
+var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+
+let textoCompleto = epic.reduce((a,b) => {return a+' '+b} );
+
+console.log(textoCompleto);
 
 
